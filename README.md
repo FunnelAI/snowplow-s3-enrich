@@ -8,3 +8,5 @@ Enrichment process: https://github.com/snowplow/snowplow/wiki/Setting-up-Enrich
 
 This solution is an experimental alternative to EmrEtlRunner
 
+A bit more about the background and the approach in blog post at https://www.ownyourbusinessdata.net/enrich-snowplow-data-with-aws-lambda-function/
+
