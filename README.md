@@ -10,3 +10,8 @@ This solution is an experimental alternative to EmrEtlRunner
 
 A bit more about the background and the approach in blog post at https://www.ownyourbusinessdata.net/enrich-snowplow-data-with-aws-lambda-function/
 
+## Compress to upload to lamvda
+
+`ls | egrep -v "test.py|.env|.git|.vscode|README.md"|zip -@ snowplow_s3_enrich.zip`
+
+you can add more files to ignore for compression to that egrep of course.
