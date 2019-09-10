@@ -1,0 +1,2 @@
+get_type = lambda key: 'timestamp' if key in ['collector_tstamp', 'dvce_created_tstamp', 'dvce_sent_tstamp'] else 'string'
+", ".join(['{} {}'.format(key,get_type(value)) for key,value in spvalues.items()])
