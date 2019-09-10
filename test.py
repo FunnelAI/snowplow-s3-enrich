@@ -10,5 +10,5 @@ S3 = boto3.client('s3',
                   region_name=os.getenv("REGION_NAME"))
 
 enrich('snowplow-funnel-logs',
-       'E2TOTHS7895X2G.2019-09-06-01.1c4dc51d.gz',
+       'E2TOTHS7895X2G.2019-09-10-21.07bd7ac8.gz',
        S3=S3)
