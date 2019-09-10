@@ -25,7 +25,8 @@ def enrich(bucket_name, file_key, S3=boto3.client('s3')):
 
     header = re.search('#Fields: (.*)', lines[1].decode("utf-8"))
     header = header.group(1).split()
-    datvalues = "\t".join(header) + "\n"
+    # datvalues = "\t".join(header) + "\n"
+    datvalues = ""
     for l in lines[2:-1]:
         r = re.compile(r'([^\t]*)\t*')
         l = r.findall(l.decode("utf-8"))[:-1]
