@@ -12,6 +12,6 @@ A bit more about the background and the approach in blog post at https://www.own
 
 ## Compress to upload to lamvda
 
-`ls | egrep -v "test.py|.env|.git|.vscode|README.md"|zip -@ snowplow_s3_enrich.zip`
+`ls | egrep -v "test.py|.env|.git|.vscode|README.md"|zip -9 -@ snowplow_s3_enrich.zip -r`
 
 you can add more files to ignore for compression to that egrep of course.
